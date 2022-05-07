@@ -11,10 +11,19 @@
         <!--Password field-->
         <i class="fas fa-key text-dark me-1 mt-3"></i>
         <label class="form-label fw-bold text-uppercase">Password</label>
+
+        <!--Buttons to switch password visibility-->
         <div class="position-relative">
-            <input type="password" class="form-control solid" (input)="onPasswordChanged($event)"
+            <input [type]="inputPasswordType()" class="form-control solid" (input)="onPasswordChanged($event)"
                 [(ngModel)]="password">
-            <i class="fa fa-eye position-absolute text-muted end-0 top-50 translate-middle-y me-2"></i>
+            <button type="button" class="position-absolute text-muted end-0 top-50 translate-middle-y 
+                        btn btn-light p-1 me-1 " (click)="onPasswordVisiblityChanged()" *ngIf="!isPasswordVisible">
+                <i class="fa fa-eye"></i>
+            </button>
+            <button type="button" class="position-absolute text-muted end-0 top-50 translate-middle-y 
+                        btn btn-light p-1 me-1" (click)="onPasswordVisiblityChanged()" *ngIf="isPasswordVisible">
+                <i class="fa fa-eye-slash"></i>
+            </button>
         </div>
 
         <!--Confirm button-->
