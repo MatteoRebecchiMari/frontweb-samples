@@ -1,0 +1,30 @@
+<div class="card shadow-sm d-flex flex-column justify-content-center">
+    <div class="card-body p-4">
+
+        <!--Username field-->
+        <i class="fas fa-user text-dark me-1"></i>
+        <label class="form-label fw-bold text-uppercase">Username</label>
+        <div class="position-relative">
+            <input type="text" class="form-control solid" (input)="onUsernameChanged($event)" [(ngModel)]="username">
+        </div>
+
+        <!--Password field-->
+        <i class="fas fa-key text-dark me-1 mt-3"></i>
+        <label class="form-label fw-bold text-uppercase">Password</label>
+        <div class="position-relative">
+            <input type="password" class="form-control solid" (input)="onPasswordChanged($event)"
+                [(ngModel)]="password">
+            <i class="fa fa-eye position-absolute text-muted end-0 top-50 translate-middle-y me-2"></i>
+        </div>
+
+        <!--Confirm button-->
+        <div class="d-flex justify-content-center mt-4 text-uppercase">
+            <div class="d-flex w-50">
+                <button class="btn btn-primary me-2 flex-grow-1" (click)="onLogin()" [disabled]="!isLoginEnabled">
+                    Login
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
