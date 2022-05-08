@@ -10,20 +10,21 @@
 
         <!--Password field-->
         <i class="fas fa-key text-dark me-1 mt-3"></i>
-        <label class="form-label fw-bold text-uppercase">Password</label>
+        <label class="form-label fw-bold text-uppercase" appHighlight>Password
+        </label>
 
-        <!--Buttons to switch password visibility-->
         <div class="position-relative">
             <input [type]="inputPasswordType()" class="form-control solid" (input)="onPasswordChanged($event)"
                 [(ngModel)]="password">
+
+            <!--Buttons to switch password visibility-->
             <button type="button" class="position-absolute text-muted end-0 top-50 translate-middle-y 
-                        btn btn-light p-1 me-1 " (click)="onPasswordVisiblityChanged()" *ngIf="!isPasswordVisible">
-                <i class="fa fa-eye"></i>
+                        btn button-white p-1 me-1" (click)="onPasswordVisiblityChanged()">
+                <!-- Change the icon class based on the property value-->
+                <i [ngClass]="{ 'fas fa-eye' : !isPasswordVisible, 'fa fa-eye-slash' : isPasswordVisible }"></i>
+
             </button>
-            <button type="button" class="position-absolute text-muted end-0 top-50 translate-middle-y 
-                        btn btn-light p-1 me-1" (click)="onPasswordVisiblityChanged()" *ngIf="isPasswordVisible">
-                <i class="fa fa-eye-slash"></i>
-            </button>
+
         </div>
 
         <!--Confirm button-->

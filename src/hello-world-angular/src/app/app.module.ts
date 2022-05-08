@@ -6,13 +6,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { LoginPageComponent } from './login-page/login-page.component';
+import { HighlightDirective } from './highlight.directive';
+import { Assignment3Component } from './assignment3/assignment3.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    HighlightDirective,
+    Assignment3Component
   ],
   imports: [
     BrowserModule,

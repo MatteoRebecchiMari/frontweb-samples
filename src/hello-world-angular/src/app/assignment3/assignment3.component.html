@@ -1,0 +1,12 @@
+<button class="btn btn-primary" (click)="onClick()">Display Details
+</button>
+
+<span>
+    Button clicked <span class="badge bg-primary">{{ clickCount() }}</span>
+</span>
+
+<p class="pt-1" [ngClass]="{'d-block': isDetailsVisible(), 'd-none': !isDetailsVisible() }">
+    Secret password tuna
+</p>
+
+<p *ngFor="let log of clickLogs; let i = index">{{ log }} {{ i }}</p>
