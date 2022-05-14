@@ -1,1 +1,11 @@
-<p>recipe-item works!</p>
+<li class="list-group-item">
+    <a href="#" class="d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">{{ item.name }}</div>
+            {{ item.description }}
+        </div>
+        <div class="">
+            <img [src]="item.imagePath" class="img-fluid rounded" style="max-height: 50px;">
+        </div>
+    </a>
+</li>

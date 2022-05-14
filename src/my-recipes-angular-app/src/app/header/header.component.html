@@ -4,24 +4,29 @@
 
             <a href="/" class="app-icon d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none me-2">
                 <img width="36rem" src="assets/recipe-svgrepo-com.svg">
-                <span>My Recepies</span>
+                <span>Recipe Book</span>
             </a>
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                <li><a href="#" class="nav-link px-2 menu-item">Recepies</a></li>
+                <li><a href="#" class="nav-link px-2 menu-item">Shopping List</a></li>
             </ul>
 
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                 <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
             </form>
 
-            <div class="text-end">
-                <button type="button" class="btn btn-outline-light me-2">Login</button>
-                <button type="button" class="btn btn-warning">Sign-up</button>
+            <div class="dropdown">
+                <a class="btn btn-warning dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Manage items
+                    <i class="fs "></i>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Save data</a></li>
+                    <li><a class="dropdown-item" href="#">Fetch data</a></li>
+                </ul>
             </div>
         </div>
     </div>

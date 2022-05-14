@@ -11,17 +11,27 @@
     transition: color ease-out 0.5s;
 }
 
-.app-icon>span:hover {
+.app-icon:hover>span {
     color: #ffda35;
     transition: color ease-in 0.5s;
 }
 
 .app-icon>img {
     transform: rotate(0deg);
-    transition: transform ease-out 1s;
+    transition: transform ease-out 0.1s;
 }
 
-.app-icon>img:hover {
-    transform: rotate(-45deg);
-    transition: transform ease-in 1s;
+.app-icon:hover>img {
+    transform: rotate(-20deg);
+    transition: transform ease-in 0.5s;
+}
+
+.menu-item {
+    color: #f4f4f4;
+    transition: color ease-out 0.5s;
+}
+
+.menu-item:hover {
+    color: #ffda35;
+    transition: color ease-in 0.5s;
 }
