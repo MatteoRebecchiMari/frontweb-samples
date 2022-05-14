@@ -1,0 +1,27 @@
+.app-icon {
+    transition: transform ease 500ms;
+}
+
+.app-icon:hover {
+    transform: scale(1.2);
+    transition: transform ease 1s;
+}
+
+.app-icon>span {
+    transition: color ease-out 0.5s;
+}
+
+.app-icon>span:hover {
+    color: #ffda35;
+    transition: color ease-in 0.5s;
+}
+
+.app-icon>img {
+    transform: rotate(0deg);
+    transition: transform ease-out 1s;
+}
+
+.app-icon>img:hover {
+    transform: rotate(-45deg);
+    transition: transform ease-in 1s;
+}
