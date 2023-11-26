@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1080px, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body class="text-muted">
+
+    <label>Rive sample</label>
+    <div class="d-flex">
+
+        <!-- Canvas for rive -->
+        <canvas style="
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+    " id="rive-canvas"></canvas>
+
+    </div>
+
+    <!--begin::ScriptSection-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@rive-app/canvas@2.7.0"></script>
+    <script src="assets/custom/index.js"></script>
+    <!--end::ScriptSection-->
+</body>
+
+</html>
