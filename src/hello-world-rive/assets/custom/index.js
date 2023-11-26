@@ -12,7 +12,7 @@ const RiveHandler = function () {
 
         // Rive setup
         const layout = new rive.Layout({
-            fit: rive.Fit.FitWidth, // Change to: rive.Fit.Contain, or Cover
+            fit: rive.Fit.FitHeight, // Change to: rive.Fit.Contain, or Cover
             alignment: rive.Alignment.Center,
         });
 
