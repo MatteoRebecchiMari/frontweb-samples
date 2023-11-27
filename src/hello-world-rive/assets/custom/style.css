@@ -1,0 +1,9 @@
+:root {
+    /* not working one */
+    cursor: url("/images/icon-cross.svg"), auto;
+}
+
+#rive-container {
+    width: 200px;
+    height: 200px;
+}
