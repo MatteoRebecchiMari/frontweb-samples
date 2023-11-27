@@ -3,6 +3,10 @@
     cursor: url("/images/icon-cross.svg"), auto;
 }
 
+body {
+    background: black;
+}
+
 #rive-container {
     width: 200px;
     height: 200px;
